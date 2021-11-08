@@ -1,0 +1,226 @@
+.Body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover;
+    background-color: rgb(142 157 173);
+}
+
+.credit {
+    font-size: 14pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #ff0000;
+    position: fixed;
+    top: 0%;
+    left: 85%;
+}
+
+ ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #b1b3b2;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background-color: #2f3030;
+        }
+
+.nav-container {
+    background-color: #232323a8;
+    font-family: sans-serif;
+    font-size: 10pt;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "series movies";
+    align-items: center;
+    justify-items: center;
+}
+
+.snav {
+    grid-area: series;
+    color: #fff;
+    margin-top: 1px;
+    position:relative;
+    left:40vw;
+    margin-top:-3vh;
+    height:;
+}
+
+.mnav {
+    grid-area: movies;
+    background-color: ;
+    color: #fff;
+    position:relative;
+    left:45vw;
+    margin-top:-3vh;
+}
+
+
+.mnav:hover {
+   background-color:#4411ba;
+}
+
+.snav:hover{
+    background-color:#4411ba;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-columns: max-content;
+    grid-gap:10px;
+}
+
+.serie {
+    background-color: #54544f;
+    width: 145px;
+    height: 230px;
+    font-size: 15pt;
+    color: #ebe39b;
+    font-weight: bold;
+    text-align: center;
+ overflow: hidden;
+}
+
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none !important;
+}
+
+.img {
+    padding: 3%;
+    margin-left: 3px;
+    width: 120px;
+    height: 167px;
+}
+.img:hover{ 
+    width: 125px;
+    height: 172px;
+    transition:0.5s;
+}
+
+.Titulo {
+    display: block;
+    font-size: 30pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #9ed929;
+    margin-top:10vh;
+}
+
+.movie {
+    display: grid;
+    padding: 3%;
+    margin-left: 3px;
+    width: 160px;
+    height: 197px;
+}
+
+.movies {
+    position: relative;
+    top: 95% !important;
+    display: block;
+    font-size: 30pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #9ed929;
+    margin-top:10vh;
+}
+
+.SeriesText {
+    font-size: 40pt;
+    font-family: cursive;
+    font-style: normal;
+    color: rgb(0, 17, 255);
+    text-align: center;
+}
+
+.movies_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap:10px;
+    top: 140%;
+    right: 400%;
+    width: 100%;
+}
+
+#peliculas {
+    display: inline-block;
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .snav {
+        grid-area: series;
+        color: #fff;
+        margin-top: 1px;
+        position:relative;
+        left:20vw;
+        margin-top:-3vh;
+    }
+    
+    .mnav {
+        grid-area: movies;
+        color: #fff;
+        position:relative;
+        left:30vw;
+        margin-top:-3vh;
+    }
+
+    .credit {
+        font-size: 8pt;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        color: #ff0000;
+        position: fixed;
+        top: 0%;
+        left: 85%;
+    }
+    .Button {
+        background-color: chartreuse;
+        width: 110px;
+        height: 60px;
+        font-size: 15pt;
+        font-style: inherit;
+        color: rgb(0, 17, 255)
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(95px, 1.5fr));
+        grid-row-gap:10px;
+        margin:auto 5px auto 5px;
+    }
+    .serie {
+        background-color: #54544f;
+        width: 90px;
+        height: 160px;
+        font-size: 9pt;
+        color: #ebe39b;
+        font-weight: bold;
+        text-align: center;
+    }
+    .movies_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(95px, 1.5fr));
+        top: 140%;
+        right: 400%;
+        width: 100%;
+        grid-row-gap:10px;
+    }
+    .img {
+        padding: 3%;
+        margin-left: 3px;
+        width: 80px;
+        height: 120px;
+    }
+}

@@ -1,0 +1,137 @@
+        body {
+            background-color: gray;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #login {
+            position: fixed;
+            background-color: #595856;
+            box-shadow: gray;
+            font-size: 20pt;
+            width: 400px;
+            height: 300px;
+            margin-left: 33%;
+            margin-top: 6%;
+        }
+        
+        #wrong {
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgba(255, 0, 0, 0.911);
+            font-size: 10pt;
+            text-align: center;
+            position: absolute;
+            top: 70%;
+            right: 40%;
+        }
+        
+        #wrong-container {
+            background-color: red;
+            width: 500px;
+        }
+        
+        #Username {
+            border: 2px, #e87161;
+            border-radius: 5px;
+            margin-left: 25%;
+            width: 20vw;
+            height: 2vw;
+            margin-top: 9%;
+        }
+        
+        #titulo {
+            font-size: 27pt;
+            color: lightgray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 33%;
+        }
+        
+        #Password {
+            position: fixed;
+            right: 36.5%;
+            border: 2px, #e87161;
+            border-radius: 5px;
+            margin-left: 25%;
+            width: 20vw;
+            height: 2vw;
+            margin-top: 9%;
+        }
+        
+        #loginButton {
+            margin-left: 39%;
+            background-color: #f0632b;
+            width: 90px;
+            height: 75px;
+            margin-top: 20%;
+            font-size: 18pt;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: lightgray;
+            font-weight: bold;
+        }
+        
+        #loginButton:hover {
+            background-color: #e84809;
+            width: 95px;
+            height: 80px;
+            transition: 0.5s;
+        }
+        
+        .wrong {
+            font-size: 15pt;
+            color: red;
+            font-weight: bold;
+            position: fixed;
+            top: 50%;
+            left: 42%;
+        }
+        
+        @media screen and (max-width:800px) {
+            #login {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                right: 0.2%;
+                bottom: 1.001%;
+                top: 23%;
+            }
+            #Username {
+                border: 1px, #e87161;
+                border-radius: 5px;
+                margin-left: 25%;
+                width: 40vw;
+                height: 5vw;
+                margin-top: 9%;
+            }
+            #Password {
+                position: fixed;
+                border: 2px, #e87161;
+                border-radius: 5px;
+                right: 33%;
+                top: 40%;
+                width: 40vw;
+                height: 5vw;
+                margin-top: 9%;
+            }
+            body {
+                background-color: #595856;
+            }
+            #loginButton {
+                position: relative;
+                margin-left: 33%;
+                background-color: #f0632b;
+                padding: 5px;
+                width: 90px;
+                height: 45px;
+                margin-top: 20%;
+                font-size: 18pt;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: lightgray;
+                font-weight: bold;
+            }
+            #wrong {
+                position: absolute;
+                left: 30%;
+                top: 60%;
+            }
+        }
